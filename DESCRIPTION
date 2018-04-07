@@ -1,11 +1,34 @@
 Package: iccrankings
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Scrape icc player rankings data from http://www.relianceiccrankings.com/
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Author: Bobby Ingram
+Maintainer: Bobby Ingram <ingram.bob@gmail.com>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+URL: https://github.com/bobbyingram/iccrankings
+BugReports: https://github.com/bobbyingram/iccrankings/issues
+Depends:
+    R (>= 3.1)
+License: file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports:
+    dplyr,
+    glue,
+    lubridate,
+    magrittr,
+    purrr,
+    rlang,
+    rvest,
+    stringr,
+    tibble,
+    xml2
+Suggests: 
+    covr,
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)
